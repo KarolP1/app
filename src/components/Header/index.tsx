@@ -26,7 +26,14 @@ const Header = (props: any) => {
   });
 
   return (
-    <div style={{ overflowX: "hidden", maxWidth: "100vw" }}>
+    <div
+      style={{
+        whiteSpace: "nowrap",
+        overflowX: "auto",
+        WebkitOverflowScrolling: "touch",
+        msOverflowStyle: "-ms-autohiding-scrollbar",
+      }}
+    >
       <HeaderContainer scrolledUp={colorOnAppbar}>
         <LogoContainer>
           <ImageLogoContainer>
