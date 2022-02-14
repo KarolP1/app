@@ -26,7 +26,7 @@ const Header = (props: any) => {
   });
 
   return (
-    <>
+    <div style={{ overflowX: "hidden" }}>
       <HeaderContainer scrolledUp={colorOnAppbar}>
         <LogoContainer>
           <ImageLogoContainer>
@@ -42,7 +42,7 @@ const Header = (props: any) => {
         <HamburgerMenu open={appInfo.isMenuOpen} />
       </HeaderContainer>
       <SideMenu open={appInfo.isMenuOpen} />
-    </>
+    </div>
   );
 };
 
