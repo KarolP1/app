@@ -1,6 +1,3 @@
-import { type } from "os";
-import { DefaultTheme } from "styled-components";
-
 export const colorTheme = {
   primary: {
     dark: "#082032",
