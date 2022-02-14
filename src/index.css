@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 }
 
 code {
@@ -14,6 +13,9 @@ code {
     monospace;
 }
 
-* {
-  font-size: 1.25rem;
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
 }
