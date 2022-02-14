@@ -5,6 +5,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -17,5 +18,6 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
   overflow-x: hidden;
 }
