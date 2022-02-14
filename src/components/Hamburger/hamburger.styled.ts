@@ -7,7 +7,7 @@ interface BurgerProp {
 export const StyledHamburgerMenu = styled.div<BurgerProp>`
   width: 3rem;
   height: 3rem;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
   z-index: 20;

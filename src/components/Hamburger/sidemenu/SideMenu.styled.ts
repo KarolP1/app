@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SideList = styled.ul<{ open: boolean }>`
-  position: absolute;
-  right: 0;
+  position: fixed;
+  left: 0;
   top: 0;
   width: 10rem;
   background-color: ${(props) => props.theme.primary.light};
   margin: 0;
-  padding: 3rem 2rem;
   transform: ${(props) =>
     props.open ? "translateY(0)" : "translateY(-100vh)"};
-  transition: 300ms ease;
+  transition: 300ms ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,9 +26,9 @@ export const SideList = styled.ul<{ open: boolean }>`
     display: none;
   }
   @media (max-width: 700px) {
-    width: 100%;
+    width: 100vw;
     padding: 0;
-    height: 100%;
+    height: 100vh;
   }
 `;
 

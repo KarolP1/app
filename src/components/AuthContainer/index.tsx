@@ -21,7 +21,7 @@ const AuthContainer = ({ children, destination }: AuthProps) => {
     <LoginSideContainer>
       <LoginContent>
         <LogoContainer>
-          <ImageLogoContainer>
+          <ImageLogoContainer to="/">
             <LogoSVG
               color={appInfo.theme.secoundary.dark}
               size={10}

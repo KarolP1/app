@@ -11,6 +11,7 @@ import { HamburgerMenu } from "../Hamburger";
 import SideMenu from "../Hamburger/sidemenu/SideMenu";
 import ProfileBox from "../Profile";
 import ToolBarMenu from "../Hamburger/ToolBarMenu";
+import { relative } from "path";
 
 const Header = (props: any) => {
   const appInfo = useSelector((state: RootState) => state.AppDependecies);
@@ -26,10 +27,10 @@ const Header = (props: any) => {
   });
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <HeaderContainer scrolledUp={colorOnAppbar}>
         <LogoContainer>
-          <ImageLogoContainer>
+          <ImageLogoContainer to="/">
             <LogoSVG
               color={appInfo.theme.secoundary.dark}
               size={2}

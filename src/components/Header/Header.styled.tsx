@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 interface HeaderProps {
@@ -13,9 +14,10 @@ export const HeaderContainer = styled.div<HeaderProps>`
     props.scrolledUp ? props.theme.primary.dark : "transparent"};
   padding: 0.5rem 0;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 99vw;
 `;
 export const LogoContainer = styled.span`
   display: flex;
@@ -25,7 +27,7 @@ export const LogoContainer = styled.span`
 
 `;
 
-export const ImageLogoContainer = styled.div`
+export const ImageLogoContainer = styled(Link)`
   margin-left: 1rem;
   display: flex;
 `;
