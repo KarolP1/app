@@ -1,12 +1,16 @@
 import React from "react";
-import { SideList, SideListItem } from "./SideMenu.styled";
+import { EmptyBox } from "../../defaultStyles";
+import { SideList } from "./SideMenu.styled";
+import SidemenuButtonLink from "./SidemenuButtonLink";
 
 const SideMenu = (props: { open: boolean }) => {
   return (
     <SideList open={props.open}>
-      <SideListItem>home</SideListItem>
-      <SideListItem>login</SideListItem>
-      <SideListItem>about</SideListItem>
+      <EmptyBox height={3} withLine={true} />
+      <SidemenuButtonLink to="/" name="home" inverted={false} />
+      <SidemenuButtonLink to="/about" name="about" inverted={false} />
+      <SidemenuButtonLink to="/login" name="login" inverted={true} />
+      <EmptyBox height={0.1} withLine={true} />
     </SideList>
   );
 };

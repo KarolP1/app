@@ -1,14 +1,21 @@
 import styled from "styled-components";
 
-interface HeaderProps {}
+interface HeaderProps {
+  scrolledUp: boolean;
+}
 
 export const HeaderContainer = styled.div<HeaderProps>`
   display: flex;
   flex-direction: row;
   height: 2rem;
-  background-color: ${(props) => props.theme.primary.dark};
+  z-index: 10;
+  background-color: ${(props) =>
+    props.scrolledUp ? props.theme.primary.dark : "transparent"};
   padding: 0.5rem 0;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
 `;
 export const LogoContainer = styled.span`
   display: flex;

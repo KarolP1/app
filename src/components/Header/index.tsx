@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   HeaderContainer,
   ImageLogoContainer,
@@ -6,26 +6,39 @@ import {
 } from "./Header.styled";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
-import { LogoSVG } from "../../assets/logo";
+import { LogoSVG } from "../../assets/logo/logo_2_3";
 import { HamburgerMenu } from "../Hamburger";
 import SideMenu from "../Hamburger/sidemenu/SideMenu";
+import ProfileBox from "../Profile";
+import ToolBarMenu from "../Hamburger/ToolBarMenu";
 
 const Header = (props: any) => {
   const appInfo = useSelector((state: RootState) => state.AppDependecies);
-  console.log(props.theme);
+  const [colorOnAppbar, setColorOnAppbar] = useState<boolean>(false);
+
+  const checkScrollY = () => {
+    if (window.scrollY > 500) return true;
+    else return false;
+  };
+  window.addEventListener("scroll", () => {
+    var bool = checkScrollY();
+    setColorOnAppbar(bool);
+  });
+
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer scrolledUp={colorOnAppbar}>
         <LogoContainer>
           <ImageLogoContainer>
             <LogoSVG
               color={appInfo.theme.secoundary.dark}
-              size={512}
+              size={2}
               title="logomain"
             />
           </ImageLogoContainer>
-          {/* <LogoTitle>{appInfo.appName}</LogoTitle> */}
         </LogoContainer>
+        {appInfo.isUserSignedIn === true && <ProfileBox />}
+        <ToolBarMenu />
         <HamburgerMenu open={appInfo.isMenuOpen} />
       </HeaderContainer>
       <SideMenu open={appInfo.isMenuOpen} />
