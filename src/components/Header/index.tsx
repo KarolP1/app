@@ -26,7 +26,7 @@ const Header = (props: any) => {
   });
 
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <div style={{ overflowX: "hidden", maxWidth: "100vw" }}>
       <HeaderContainer scrolledUp={colorOnAppbar}>
         <LogoContainer>
           <ImageLogoContainer>
