@@ -6,7 +6,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden !important;
 }
 
 code {
@@ -18,5 +17,4 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px */
-  overflow: hidden !important;
 }
