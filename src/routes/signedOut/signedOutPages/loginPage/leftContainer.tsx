@@ -5,7 +5,17 @@ import image from "../../../../assets/sideImage.png";
 const LeftContainer = () => {
   return (
     <LoginSideContainerLeft>
-      <div style={{ backgroundColor: "red", flex: 1, maxWidth: "100vh" }}></div>
+      <img
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100vh",
+          width: "50vw",
+        }}
+        src={image}
+        alt="leftsideImage"
+      />
     </LoginSideContainerLeft>
   );
 };
