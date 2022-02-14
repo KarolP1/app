@@ -10,7 +10,8 @@ export const SideList = styled.ul<{ open: boolean }>`
   background-color: ${(props) => props.theme.primary.light};
   margin: 0;
   padding: 3rem 2rem;
-  transform: ${(props) => (props.open ? "translateX(0)" : "translateX(50rem)")};
+  transform: ${(props) =>
+    props.open ? "translateX(0)" : "translateX(150rem)"};
   transition: 300ms ease;
   display: flex;
   flex-direction: column;

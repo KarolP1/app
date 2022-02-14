@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { LogoSVG } from "../../assets/logo/logo_1x1";
-import UserRegisterForm from "../../routes/signedOut/registerPage/UserRegisterForm";
+import UserRegisterForm from "../../routes/signedOut/signedOutPages/registerPage/UserRegisterForm";
 import {
   LoginContent,
   LoginSideContainer,

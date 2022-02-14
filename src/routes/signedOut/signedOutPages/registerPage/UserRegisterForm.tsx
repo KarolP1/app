@@ -1,10 +1,10 @@
 import React from "react";
-import { StyledButton } from "../../../components/Hamburger/sidemenu/SideMenu.styled";
+import { StyledButton } from "../../../../components/Hamburger/sidemenu/SideMenu.styled";
 import {
   AuthForm,
   AuthFormInput,
   TextLink,
-} from "../signedOutPages/loginPage/loginpage.styled";
+} from "../loginPage/loginpage.styled";
 
 const UserRegisterForm = () => {
   return (
