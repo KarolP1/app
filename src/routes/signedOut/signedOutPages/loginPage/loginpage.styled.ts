@@ -11,6 +11,7 @@ export const LoginSideContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-top: 15vh;
 `;
 
 export const LoginSideContainerLeft = styled.div`
