@@ -7,7 +7,7 @@ interface HeaderProps {
 export const HeaderContainer = styled.div<HeaderProps>`
   display: flex;
   flex-direction: row;
-  height: 3rem;
+  height: 3.5rem;
   z-index: 10;
   background-color: ${(props) =>
     props.scrolledUp ? props.theme.primary.dark : "transparent"};

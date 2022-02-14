@@ -11,7 +11,7 @@ export const SideList = styled.ul<{ open: boolean }>`
   margin: 0;
   padding: 3rem 2rem;
   transform: ${(props) =>
-    props.open ? "translateX(0)" : "translateX(150rem)"};
+    props.open ? "translateY(0)" : "translateY(-100vh)"};
   transition: 300ms ease;
   display: flex;
   flex-direction: column;
