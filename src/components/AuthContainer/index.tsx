@@ -8,6 +8,7 @@ import {
 } from "../../routes/signedOut/signedOutPages/loginPage/loginpage.styled";
 import UserLoginForm from "../../routes/signedOut/signedOutPages/loginPage/UserLoginForm";
 import { RootState } from "../../store";
+import { EmptyBox } from "../defaultStyles";
 import { ImageLogoContainer, LogoContainer } from "../Header/Header.styled";
 
 interface AuthProps {
@@ -20,6 +21,7 @@ const AuthContainer = ({ children, destination }: AuthProps) => {
   return (
     <LoginSideContainer>
       <LoginContent>
+        <EmptyBox height={15} />
         <LogoContainer>
           <ImageLogoContainer>
             <LogoSVG

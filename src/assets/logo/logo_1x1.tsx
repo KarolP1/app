@@ -31,7 +31,7 @@ export const LogoSVG = (props: IconInterface) => {
             fontFamily="Noto Sans JP"
             fontSize="24"
             id="svg_4"
-            y="24.47044"
+            y="22.47044"
             x="9.94031"
             strokeWidth="0"
             fill={color}

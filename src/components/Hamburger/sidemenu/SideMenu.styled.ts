@@ -10,7 +10,7 @@ export const SideList = styled.ul<{ open: boolean }>`
   background-color: ${(props) => props.theme.primary.light};
   margin: 0;
   padding: 3rem 2rem;
-  transform: ${(props) => (props.open ? "translateX(0)" : "translateX(40rem)")};
+  transform: ${(props) => (props.open ? "translateX(0)" : "translateX(50rem)")};
   transition: 300ms ease;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,10 @@ export const StyledLink = styled(Link)<LinkButton>`
   //
   text-decoration: none;
   text-transform: capitalize;
+  text-align:center;
+  
   padding: 0.3rem 0;
+  font-size:2rem;
   background-color: ${(props) =>
     props.inverted ? props.theme.secoundary.dark : "transparent"};
   }
@@ -76,6 +79,7 @@ export const StyledLink = styled(Link)<LinkButton>`
 export const StyledButton = styled.button`
   //
   color: ${(props) => props.theme.secoundary.dark};
+  font-size: 2rem;
   text-decoration: none;
   text-transform: capitalize;
   padding: 0.3rem 0.4rem;

@@ -28,7 +28,6 @@ export const LoginContent = styled.div`
   flex-direction: column;
   align-items: center;
   height: min-content;
-  top: 15%;
 `;
 
 export const AuthForm = styled.form`
@@ -41,6 +40,8 @@ export const AuthFormInput = styled.input`
   padding: 0.2rem 2rem;
   border: 2px solid ${(props) => props.theme.secoundary.light};
   border-radius: 0.2rem;
+  height: 3rem;
+  font-size: 1.5rem;
 
   &:focus {
     border: 2px solid ${(props) => props.theme.primary.dark};
@@ -48,7 +49,7 @@ export const AuthFormInput = styled.input`
 `;
 export const TextLink = styled(Link)`
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color: ${(props) => props.theme.secoundary.dark};
   text-decoration: none;

@@ -5,8 +5,8 @@ interface BurgerProp {
 }
 
 export const StyledHamburgerMenu = styled.div<BurgerProp>`
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -21,8 +21,8 @@ export const StyledHamburgerMenu = styled.div<BurgerProp>`
   }
   div {
     z-index: 100;
-    width: 2rem;
-    height: 0.25rem;
+    width: 3rem;
+    height: 0.3rem;
     background-color: ${({ open, theme }) =>
       open ? theme.secoundary.dark : theme.secoundary.dark};
     border-radius: 10px;

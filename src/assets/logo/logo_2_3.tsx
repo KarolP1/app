@@ -31,7 +31,7 @@ export const LogoSVG = (props: IconInterface) => {
             fontFamily="Noto Sans JP"
             fontSize="24"
             id="svg_4"
-            y="24.47044"
+            y="22.47044"
             x="9.94031"
             strokeWidth="0"
             fill={color}
@@ -47,8 +47,8 @@ export const LogoSVG = (props: IconInterface) => {
           fontSize="24"
           strokeWidth="0"
           id="svg_3"
-          y="25"
-          x="31"
+          y="22.47044"
+          x="30.5"
           stroke="#000"
           fill={color}
           style={{ transform: `scale(${size / 1.5})` }}
