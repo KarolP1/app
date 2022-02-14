@@ -11,7 +11,6 @@ import { HamburgerMenu } from "../Hamburger";
 import SideMenu from "../Hamburger/sidemenu/SideMenu";
 import ProfileBox from "../Profile";
 import ToolBarMenu from "../Hamburger/ToolBarMenu";
-import { relative } from "path";
 
 const Header = (props: any) => {
   const appInfo = useSelector((state: RootState) => state.AppDependecies);
