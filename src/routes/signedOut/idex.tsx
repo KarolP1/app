@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./signedOutPages/about";
-import ContactUs from "./signedOutPages/contactUs";
+import ContactUs from "./signedOutPages/contactUs/contactUs";
 import Home from "./signedOutPages/home";
 import Login from "./signedOutPages/loginPage/login";
 import Register from "./signedOutPages/registerPage/register";
