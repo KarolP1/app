@@ -9,6 +9,7 @@ const SideMenu = (props: { open: boolean }) => {
       <EmptyBox height={6} withLine={true} />
       <SidemenuButtonLink to="/" name="home" inverted={false} />
       <SidemenuButtonLink to="/about" name="about" inverted={false} />
+      <SidemenuButtonLink to="/contactus" name="contact" inverted={false} />
       <SidemenuButtonLink to="/login" name="login" inverted={true} />
       <EmptyBox height={0.1} withLine={true} />
     </SideList>
