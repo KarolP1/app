@@ -90,6 +90,7 @@ export const CuCform = styled.form`
   flex-direction: column;
   max-width: 850px;
   width: 100%;
+  overflow: auto;
 
   input,
   textarea {
