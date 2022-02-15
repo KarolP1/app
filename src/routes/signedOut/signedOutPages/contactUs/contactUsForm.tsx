@@ -1,4 +1,5 @@
 import React from "react";
+import { StyledButton } from "../../../../components/Hamburger/sidemenu/SideMenu.styled";
 import {
   CU_form,
   CU_formSubitle,
@@ -20,6 +21,7 @@ const ContactUsForm = () => {
           placeholder="Type message here"
           onBlur={() => console.log("lostit")}
         />
+        <StyledButton type="submit">send</StyledButton>
       </CU_form>
     </>
   );

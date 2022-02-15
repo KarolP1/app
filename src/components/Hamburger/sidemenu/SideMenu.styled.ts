@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const SideList = styled.ul<{ open: boolean }>`
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   width: 10rem;
   background-color: ${(props) => props.theme.primary.light};
