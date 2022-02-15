@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CU_container = styled.div`
+export const CuCcontainer = styled.div`
   flex: 1;
   display: flex;
   grid-template-columns: minmax(0, 30vw) auto;
@@ -17,7 +17,7 @@ export const CU_container = styled.div`
   }
 `;
 
-export const CU_imageContainer = styled.div`
+export const CuCimageContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -35,20 +35,20 @@ export const CU_imageContainer = styled.div`
   }
 `;
 
-export const CU_image = styled.img`
+export const CuCimage = styled.img`
   flex: 1;
   object-fit: cover;
   width: 100%;
   height: 100%;
 `;
 
-export const CU_LogoTitle = styled.p`
+export const CuCLogoTitle = styled.p`
   font-size: 3rem;
   font-weight: 700;
   color: ${(props) => props.theme.secoundary.dark};
 `;
 
-export const CU_formContainer = styled.div`
+export const CuCformContainer = styled.div`
   display: flex;
   flex: 2;
   padding: 10rem 15rem;
@@ -62,7 +62,7 @@ export const CU_formContainer = styled.div`
   }
 `;
 
-export const CU_formTitle = styled.h2`
+export const CuCformTitle = styled.h2`
   color: ${(props) => props.theme.secoundary.dark};
   font-size: 4rem;
 
@@ -73,7 +73,7 @@ export const CU_formTitle = styled.h2`
   }
 `;
 
-export const CU_formSubitle = styled.h3`
+export const CuCformSubitle = styled.h3`
   color: ${(props) => props.theme.primary.mid};
   font-size: 3rem;
 
@@ -85,7 +85,7 @@ export const CU_formSubitle = styled.h3`
 `;
 //PIN: contact form
 
-export const CU_form = styled.form`
+export const CuCform = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 850px;
@@ -103,7 +103,7 @@ export const CU_form = styled.form`
   }
 `;
 
-export const CU_formTextarea = styled.textarea`
+export const CuCformTextarea = styled.textarea`
   max-width: 840px;
   max-height: 300px;
 `;

@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  CU_container,
-  CU_formContainer,
-  CU_imageContainer,
-  CU_LogoTitle,
+  CuCcontainer,
+  CuCformContainer,
+  CuCimageContainer,
+  CuCLogoTitle,
 } from "./contactUs.styled";
 import { LogoSVG } from "../../../../assets/logo/logo_1x1";
 import { useSelector } from "react-redux";
@@ -13,19 +13,19 @@ import ContactUsForm from "./contactUsForm";
 const ContactUs = () => {
   const appInfo = useSelector((state: RootState) => state.AppDependecies);
   return (
-    <CU_container>
-      <CU_imageContainer>
+    <CuCcontainer>
+      <CuCimageContainer>
         <LogoSVG
           color={appInfo.theme.secoundary.dark}
           size={10}
           title="logomain"
         />
-        <CU_LogoTitle>{appInfo.appName}</CU_LogoTitle>
-      </CU_imageContainer>
-      <CU_formContainer>
+        <CuCLogoTitle>{appInfo.appName}</CuCLogoTitle>
+      </CuCimageContainer>
+      <CuCformContainer>
         <ContactUsForm />
-      </CU_formContainer>
-    </CU_container>
+      </CuCformContainer>
+    </CuCcontainer>
   );
 };
 
